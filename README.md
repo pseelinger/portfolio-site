@@ -1,0 +1,5 @@
+Portfolio Site
+======
+This is my personal portfolio site. Other than merely showing off my work, I'm also attempting to do a couple unique things with the site. The goal is to have all of the pages be one single html page for load time purposes. However, I think that single page scroll presents a bad user experience as it requires the user to either scroll around or get lost in a sea of anchor tags when trying to use the back button on their browser.
+Each page is actually a just a section of the single html page, and I use simple show and hide effects in javascript to make it seem like they are new pages in themselves. I used the Skeleton framework for its simplicity and ready-to-go responsiveness. I use Angular.js to access a json file for the portfolio pieces themselves.
+The back button is still an issue with my site as it will actually take you off page when you hit it, unless you've clicked on my name on the top nav bar. Then, it will take you back to the "home page".

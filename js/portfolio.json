@@ -1,0 +1,44 @@
+[
+  {
+    "name": "360 Degrees of Storytelling",
+    "url": "http://endeavors.unc.edu/360_degrees_of_storytelling",
+    "description": "This story focuses on journalism professor Steven King, who searches for new ways to engage audiences and tell stories through 360 video.",
+    "image": "http://endeavors.unc.edu/sites/default/files/imagecache/in_story_preview/photos/endeavors_stevenking_1.png",
+    "category": "writing"
+  },
+  {
+    "name": "The New Social Network",
+    "url": "http://endeavors.unc.edu/the_new_social_network",
+    "description": "This story dicusees UNC's research into augmented reality and telepresence, including the development of an augemented reality headset and a virtual conference room.",
+    "image": "http://endeavors.unc.edu/sites/default/files/imagecache/in_story_preview/photos/encumbrance-free.jpg",
+    "category": "writing"
+  },
+  {
+    "name": "Undercurrent 360",
+    "url": "http://undercurrent360.com",
+    "description": "This site is a multimedia documentary on the Bocas del Toro province in Panama and how the coral reef there affects the environment, economy and everyday life of the residents. I developed the mobile site, customized the 360 player to meet our needs and helped with the desktop site development. It won the 2016 Online Journalism Award for Excellence and Innovation in Digital Visual Storytelling",
+    "image": "http://patseelinger.com/test/images/undercurrent.PNG",
+    "category": "design"
+  },
+  {
+    "name": "The Swamp School",
+    "url": "http://swampschool.org",
+    "description": "I moved the Swamp School over to a more modern, clean and user friendly site. The site is fully responsive and has seen a significant increase in pageviews since the overhaul.",
+    "image": "http://patseelinger.com/test/images/swampschool.PNG",
+    "category": "design"
+  },
+  {
+    "name": "Avazyme, Inc.",
+    "url": "http://www.avazyme.com",
+    "description": "I redesigned Avazyme's site for aesthetic appeal as well as usability. I started from a minimal Wordpress theme so that the client could add a news and blog section.",
+    "image": "swampschool.png",
+    "category": "design"
+  },
+  {
+    "name": "The Music of Discovery",
+    "url": "http://endeavors.unc.edu/the_music_of_discovery_0",
+    "description": "This story is on UNC music professor Lee Weisert, who creates sound installations that expose musical behaviors in natural processes.",
+    "image": "http://endeavors.unc.edu/sites/default/files/imagecache/display/photos/granular_wall.jpg",
+    "category": "writing"
+  }
+]

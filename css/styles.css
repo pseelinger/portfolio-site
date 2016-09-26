@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Elevation;
+  src: url(../fonts/Elevation.ttf)
+}
+@font-face {
+  font-family: Moon;
+  src: url(../fonts/TT-Moons-Thin-Italic-DEMO.otf)
+}
+@font-face {
+  font-family: Sylfaen;
+  src: url(../fonts/sylfaen.ttf)
+}
+html{
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/background.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover !important;
+}
+p{
+  font-family: Sylfaen;
+}
+h1, h2, h4{
+  font-family: Elevation;
+  font-weight: 500;
+  letter-spacing: 2.4px;
+  color: #000d30;
+}
+h1{
+  letter-spacing: -2px;
+}
+h2{
+  text-align: center;
+  margin-top: 80px;
+}
+h3{
+  font-family: Moon;
+  color: #323947;
+  font-size: 3rem;
+}
+a{
+  color: #323947;
+  transition: color 400ms;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:visited{
+  color: initial;
+}
+/* Home page styles */
+#home-page{
+  margin-top: 40vh;
+  text-align: center;
+}
+#home-links h3{
+  line-height: .6;
+}
+#home-links > :first-child{
+  letter-spacing: -2.5px;
+}
+#home-links > :nth-child(2){
+  letter-spacing: -.6px;
+}
+@media (min-width: 375px){
+  #home-links > :first-child{
+    letter-spacing: 0px;
+  }
+  #home-links > :nth-child(2){
+    letter-spacing: 2px;
+  }
+  h1{
+    letter-spacing: 2.4px;
+  }
+}
+
+#home-links a:hover, h5 a:hover{
+  color: #dcecff;
+}
+
+
+/*Menu Styling */
+.top-nav{
+  width: 100%;
+  background-color: #689cba;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.menu-show{
+  display: block;
+}
+.menu-hide{
+  display: none;
+}
+h4{
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin-bottom: 0;
+}
+h4 a:hover{
+  color: #000d30;
+}
+#hamburger{
+  float: right;
+  max-height: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+  z-index: 999;
+}
+#menu{
+  height: 100vh;
+  width: 100vw;
+  background-color: #689cba;
+  z-index: 99;
+}
+#main-nav{
+  padding-top: 20vh;
+  list-style-type: none;
+  text-align: center;
+  font-family: Moon;
+  font-size: 3rem;
+  line-height: 2;
+}
+#social{
+  position: static;
+  bottom: 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  z-index: 999;
+}
+#social img{
+  max-width: 40px;
+  max-height: 30px;
+  margin: 1.5px;
+}
+.visible-menu{
+  display: block !important;
+  opacity: 100 !important;
+}
+.invisible-menu{
+  display: none;
+  opacity: 0;
+}
+.visible-under-menu{
+  display: none;
+}
+.invisible-under-menu{
+  display: block;
+}
+h5{
+  display: none;
+}
+@media (min-width: 800px) {
+  #hamburger{
+    display: none;
+  }
+  h5{
+    font-family: Moon;
+    display: inline;
+  }
+  .top-nav h4{
+    display: inline;
+  }
+  #social{
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+  }
+}
+/* Default no display for content pages, add class to make them appear */
+#design-page, #writing-page, #bio-page, #resume-page, #contact-page{
+  display: none;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.visible-page{
+  display: block !important;
+  opacity: 100 !important;
+}
+.invisible-page{
+  display: none;
+  opacity: 0;
+}
+
+/* Portfolio Pages Styling */
+.portfolio-box{
+  min-height: 250px;
+  min-width: 150px;
+  padding: 35px;
+  font-family: Sylfaen;
+  font-size: 1.55rem;
+  line-height: 1.5;
+  color: #b5b5b5;
+  margin: 20px;
+  box-shadow: 10px 8px 15px #000d30;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.portfolio-box h3{
+  color: #dcecff;
+  letter-spacing: 0px;
+}
+/* Bio Page */
+#bio-img{
+  width: 100%;
+}
+#bio-text{
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 3px;
+  padding: 20px;
+  height: 100%;
+  line-height: 2;
+  color: #a9a9a9;
+  font-size: 18px;
+}
+/* Contact Page */
+#contact-info h3{
+  line-height: .5;
+  text-align: center;
+}

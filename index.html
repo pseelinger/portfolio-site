@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Pat Seelinger | Web Design and Development</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Angular
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+
+</head>
+<body>
+<div class="wrapper" ng-app="myApp" ng-controller="BaseController as myCtrl">
+  <!-- Top navigation - will be invisible on home page
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="top-nav menu-hide">
+  <img id="hamburger" src="images/hamburger_menu_white.png" ng-click="isMenuVisible = !isMenuVisible">
+    <h4><a href="index.html">PAT SEELINGER</a></h4>
+    <!-- desktop menu -->
+      <h5 id="desktop-menu"><a id="design" onclick="showPage('design-page')">WEB DESIGN/DEV</a> | <a id="writing" onclick="showPage('writing-page')">WRITING</a> |
+        <a id="bio" onclick="showPage('bio-page')" >BIO</a> | <a id="resume">RESUME</a> | <a id="contact" onclick="showPage('contact-page')">CONTACT</a></h5>
+
+</div>
+
+<div id="menu" ng-show="isMenuVisible"><!--mobile menu -->
+  <ul id="main-nav">
+    <li><a id="design" onclick="showPage('design-page')" ng-click="isMenuVisible = !isMenuVisible">WEB DESIGN/DEV</a></li>
+    <li><a id="writing" onclick="showPage('writing-page')" ng-click="isMenuVisible = !isMenuVisible">WRITING</a></li>
+    <li><a id="bio" onclick="showPage('bio-page')" ng-click="isMenuVisible = !isMenuVisible">BIO</a></li>
+    <li><a id="resume" ng-click="isMenuVisible = !isMenuVisible">RESUME</a></li>
+    <li><a id="contact" onclick="showPage('contact-page')" ng-click="isMenuVisible = !isMenuVisible">CONTACT</a></li>
+  </div>
+<div id="content-wrap" ng-show="!isMenuVisible">
+
+  <!-- Home 'page'
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container visible-page" id="home-page">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>PAT SEELINGER</h1>
+        <div id="home-links">
+        <h3><a id="design" onclick="showPage('design-page')">WEB DESIGN/DEV</a> | <a id="writing" onclick="showPage('writing-page')">WRITING</a></h3>
+        <h3><a id="bio" onclick="showPage('bio-page')">BIO</a> | <a id="resume">RESUME</a> | <a id="contact" onclick="showPage('contact-page')">CONTACT</a></h3>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Design/Dev 'page'
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" id="design-page">
+    <div class="row">
+      <h2>WEB DESIGN/DEV</h2>
+      <div class="five columns" ng-repeat="project in myCtrl.projects | filter:{category:'design'}">
+    <a href="{{project.url}}">
+      <div class="portfolio-box" style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                rgba(0,0,0,0.55) url({{project.image}})" >
+        <h3>{{project.name}}</h3>
+        <p>{{project.description}}</p>
+      </div>
+    </a>
+    </div>
+    </div>
+  </div>
+
+  <!-- Writing 'page'
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" id="writing-page">
+    <div class="row">
+      <h2>WRITING</h2>
+      <div class="five columns" ng-repeat="project in myCtrl.projects | filter:{category:'writing'}">
+    <a href="{{project.url}}">
+      <div class="portfolio-box" style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                rgba(0,0,0,0.55) url({{project.image}})" >
+        <h3>{{project.name}}</h3>
+        <p>{{project.description}}</p>
+      </div>
+    </a>
+    </div>
+    </div>
+  </div>
+
+  <!-- Bio'page'
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container" id="bio-page">
+    <div class="row">
+      <h2>BIO</h2>
+        <div class="six columns">
+          <img id="bio-img" src="images/bio.jpg">
+        </div>
+          <div class="five columns">
+        <p id="bio-text">Hey there! My name is Patrick, and I'm a web designer and developer from Chapel Hill, North Carolina. Right now, I'm pursuing a degree in media and journalism from
+        the University of North Carolina at Chapel Hill, concentrating on interactive multimedia and new ways to tell stories using web technologies. I'm particulary interested in how virtual
+      and augmented reality can be used in the field of jouralism. My skills include HTML, CSS, Javascript, Jquery, Angular.js and D3.js. I'm also working on learning Unity and how to shoot and stitch 360 video.
+      My hobbies include playing guitar, wakeboarding and hiking. I'm an avid coffee drinker and a huge fan of the alternative music scene.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact'page'
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container" id="contact-page">
+    <div class="row">
+      <h2>CONTACT</h2>
+        <div class="twelve columns">
+          <div id="contact-info">
+            <h3>+1 919.971.3473</h3>
+            <h3>patseelinger@gmail.com</h3>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Social Media -->
+  <div id="social">
+      <a href="https://www.linkedin.com/in/patrick-seelinger-8a8443122"><img src="images/linkedin.png"></a>
+      <a href="https://www.facebook.com/wildcard.seelinger"><img src="images/facebook.png"></a>
+      <a href="https://twitter.com/wcard_seelinger"><img src="images/twitter.png"></a>
+  </div>
+</div> <!-- content wrapper end here -->
+</div>
+<script src="js/script.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

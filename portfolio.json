@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Through the Looking Glass",
+    "url": "http://endeavors.unc.edu/through_the_looking_glass",
+    "description": "This story is a comprehensive history of the UNC Computer Science Department and its role in the development of graphics, virtual environments and virtual reality.",
+    "image": "http://endeavors.unc.edu/sites/default/files/imagecache/in_story_preview/photos/grad_student_rich_holloway_wearing_the_flight_helment_from_virutal_research.tif_.jpg",
+    "category": "writing"
+  },
+  {
+    "name": "360 Degrees of Storytelling",
+    "url": "http://endeavors.unc.edu/360_degrees_of_storytelling",
+    "description": "This story focuses on journalism professor Steven King, who searches for new ways to engage audiences and tell stories through 360 video.",
+    "image": "http://endeavors.unc.edu/sites/default/files/imagecache/in_story_preview/photos/endeavors_stevenking_1.png",
+    "category": "writing"
+  },
+  {
+    "name": "The New Social Network",
+    "url": "http://endeavors.unc.edu/the_new_social_network",
+    "description": "This story dicusees UNC's research into augmented reality and telepresence, including the development of an augemented reality headset and a virtual conference room.",
+    "image": "http://endeavors.unc.edu/sites/default/files/imagecache/in_story_preview/photos/encumbrance-free.jpg",
+    "category": "writing"
+  },
+  {
+    "name": "Undercurrent 360",
+    "url": "http://undercurrent360.com",
+    "description": "This 2016 Online Journalism Award for Excellence and Innovation in Digital Visual Storytelling winning multimedia documentary examines how the coral reef in the Bocas del Toro province in Panama affects the environment, economy and everyday life of the residents. I led development of the mobile site and 360 video player.",
+    "image": "http://patseelinger.com/images/undercurrent.PNG",
+    "category": "design"
+  },
+  {
+    "name": "Fruit and Vegetable Consumption",
+    "url": "http://patseelinger.com/food-dashboard",
+    "description": "This data visualization shows that most adults don't get enough fruits and vegetables in their diet on a daily basis. The interactive table and gauges at the bottom give it a personal angle.",
+    "image": "http://patseelinger.com/images/food-dashboard.PNG",
+    "category": "design"
+  },
+  {
+    "name": "UNC Undergraduate Consulting Club",
+    "url": "http://uncconsulting.org",
+    "description": "This was a simple Wordpress site I made for the UNC Undergraduate Consulting Club. I used the Tesseract theme to start to create a customized, responsive and professional looking-site.",
+    "image": "http://patseelinger.com/images/consulting.PNG",
+    "category": "design"
+  },
+  {
+    "name": "Simple CMS",
+    "url": "https://still-temple-11576.herokuapp.com/",
+    "description": "This is a Node.js app that works as a simple content management system. It works by sending REST commands to a MongoDB database. I have loaded a sample page in with some of my info.",
+    "image": "http://patseelinger.com/images/cms.PNG",
+    "category": "design"
+  },
+  {
+    "name": "Knowledge on Current Events",
+    "url": "https://events-data-viz.herokuapp.com/",
+    "description": "This Node.js app shows information on how much people know about what's going on in the world. The interactive graphs are done in D3.js.",
+    "image": "http://patseelinger.com/images/events.PNG",
+    "category": "design"
+  },
+  {
+    "name": "The Swamp School",
+    "url": "http://swampschool.org",
+    "description": "I moved the Swamp School over to a more modern, clean and user friendly site. The site is fully responsive and has seen a significant increase in pageviews since the overhaul.",
+    "image": "http://patseelinger.com/images/swampschool.PNG",
+    "category": "design"
+  },
+  {
+    "name": "The Music of Discovery",
+    "url": "http://endeavors.unc.edu/the_music_of_discovery_0",
+    "description": "This story is on UNC music professor Lee Weisert, who creates sound installations that expose musical behaviors in natural processes.",
+    "image": "http://endeavors.unc.edu/sites/default/files/imagecache/display/photos/granular_wall.jpg",
+    "category": "writing"
+  }
+]
